@@ -21,6 +21,7 @@ class RatingSerializer(serializers.ModelSerializer):
         'Date',
         'User',
         'Movie')
+        depth = 1
 
 
 class UserSerializer(serializers.ModelSerializer):

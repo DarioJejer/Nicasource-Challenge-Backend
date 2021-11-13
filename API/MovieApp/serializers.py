@@ -21,7 +21,6 @@ class RatingSerializer(serializers.ModelSerializer):
         'Date',
         'User',
         'Movie')
-        depth = 1
 
 
 class UserSerializer(serializers.ModelSerializer):
@@ -29,4 +28,5 @@ class UserSerializer(serializers.ModelSerializer):
         model = Users
         fields = ('Id',
         'Username',
-        'Password')
+        'Password',
+        "IsAdmin")

@@ -14,6 +14,7 @@ class Users(models.Model):
     Id = models.AutoField(primary_key=True)
     Username = models.CharField(max_length=100)
     Password = models.CharField(max_length=100)
+    IsAdmin = models.BooleanField()
 
 class Ratings(models.Model):
     Id = models.AutoField(primary_key=True)
